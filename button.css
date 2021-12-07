@@ -1,0 +1,52 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+display|Courgette');
+
+/* colors */
+:root{
+  --dark-blue:#1C0C33;
+  --light-blue:#F8F3FE;
+  --hot-pink:#FA243C;
+  --fade-pink:#FB4D61;
+  --dark-pink:#DC001A;
+}
+
+body{
+  margin:0;
+  background:var(--light-blue);
+}
+
+.wrapper{
+  display:flex;
+  justify-content:center;
+  height:100vh;
+  align-items:center;
+  flex-direction:column;
+}
+
+.wrapper p{
+  font-size:5rem;
+  font-family:'Major Mono Display';
+  color:var(--dark-blue);
+}
+
+.wrapper a.flat-btn{
+  text-decoration:none;
+  font-size:1.5rem;
+  font-family:Courgette;
+  font-weight:bold;
+  letter-spacing:1px;
+  background:var(--hot-pink)
+  color:#fff;
+  padding:15px 50px;
+  border-radius:5px;
+  box-shadow:0 5px 0 0 var(--dark-pink);
+}
+
+.wrapper a.flat-btn:hover{
+  background:var(--fade-pink);
+}
+
+.wrapper a.flat-btn:active{
+  transform:translateY(5px);
+  box-shadow:none;
+}
